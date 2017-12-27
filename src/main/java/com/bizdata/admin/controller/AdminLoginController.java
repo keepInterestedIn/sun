@@ -2,8 +2,6 @@ package com.bizdata.admin.controller;
 
 import com.bizdata.admin.controller.vo.LoginParamVO;
 import com.bizdata.admin.service.UserService;
-import com.bizdata.app.imagecode.ImageCode;
-import com.bizdata.app.imagecode.ImageCodeUtils;
 import com.bizdata.commons.constant.LoginLogoutType;
 import com.bizdata.commons.utils.LogInOrOutManager;
 import com.bizdata.framework.shiro.config.ShiroConfigProperties;
@@ -24,7 +22,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -43,8 +40,7 @@ public class AdminLoginController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private ImageCodeUtils imageCodeUtils;
+
     @Autowired
     private ShiroConfigProperties shiroConfigProperties;
 
@@ -70,14 +66,6 @@ public class AdminLoginController {
     public ResultVO ajaxLogin(@RequestBody LoginParamVO loginParamVO, HttpServletRequest request) {
         ResultVO resultVO;
         try {
-        	ImageCode c = imageCodeUtils.ckeckCode(loginParamVO.getCode(),request.getSession().getId());
-        	if( c== null){
-        		imageCodeUtils.deleteBySessionid(request.getSession().getId());
-        		return ResultUtil.create(-1, "验证码错误!");
-        	}else {
-        		//删除该session请求的全部验证码
-        		imageCodeUtils.delete(c);
-        	}
             UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(loginParamVO.getUsername(), loginParamVO.getPassword(), loginParamVO.isRememberMe());
             SecurityUtils.getSubject().login(usernamePasswordToken);
             resultVO = ResultUtil.create(0, "登录成功!");
