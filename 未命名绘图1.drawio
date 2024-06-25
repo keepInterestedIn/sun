@@ -1,0 +1,301 @@
+<mxfile host="app.diagrams.net" modified="2024-06-25T01:08:02.693Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="mRrXl2iueJmeXivaapFW" version="24.6.2" type="github">
+  <diagram name="第 1 页" id="JlrWr6hMcNCYKsk2lZ5R">
+    <mxGraphModel dx="662" dy="375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-1" value="&lt;div&gt;APP&lt;/div&gt;&lt;div&gt;浏览器&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-2" value="认证中心" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-3" value="第三方业务系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-1" target="3OCdjHM_GOLRnjaXkHwM-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="170" as="sourcePoint" />
+            <mxPoint x="300" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-12" value="1. 输入用户密码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-11">
+          <mxGeometry x="-0.1024" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-2" target="3OCdjHM_GOLRnjaXkHwM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="230" as="sourcePoint" />
+            <mxPoint x="310" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-14" value="2. 返回令牌、刷新令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-13">
+          <mxGeometry x="0.0905" relative="1" as="geometry">
+            <mxPoint x="7" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.11;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="93.20000000000005" y="184.67999999999995" as="sourcePoint" />
+            <mxPoint x="93" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-16" value="3. API带上令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-15">
+          <mxGeometry x="-0.0422" y="-2" relative="1" as="geometry">
+            <mxPoint x="-11" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.079;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.724;exitY=-0.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-3" target="3OCdjHM_GOLRnjaXkHwM-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="280" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-19" value="&lt;div&gt;4. 验证令牌合法性&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-17">
+          <mxGeometry x="0.0776" relative="1" as="geometry">
+            <mxPoint x="-10" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.404;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.824;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-2" target="3OCdjHM_GOLRnjaXkHwM-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="290" as="sourcePoint" />
+            <mxPoint x="408" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-21" value="&lt;div&gt;5. 验证成功&lt;/div&gt;&lt;div&gt;返回用户信息&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-20">
+          <mxGeometry x="-0.1799" y="-2" relative="1" as="geometry">
+            <mxPoint x="13" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="3OCdjHM_GOLRnjaXkHwM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="300" as="sourcePoint" />
+            <mxPoint x="190" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-23" value="6. 返回业务数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-22">
+          <mxGeometry x="0.0675" relative="1" as="geometry">
+            <mxPoint y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.34;entryY=-0.052;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="3OCdjHM_GOLRnjaXkHwM-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="120" as="sourcePoint" />
+            <mxPoint x="400" y="40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="40" />
+              <mxPoint x="400" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-26" value="7. 令牌过期，带上刷新令牌重新请求令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-25">
+          <mxGeometry x="-0.1006" y="-2" relative="1" as="geometry">
+            <mxPoint x="21" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.17;exitY=-0.052;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.833;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-2" target="3OCdjHM_GOLRnjaXkHwM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="60" as="sourcePoint" />
+            <mxPoint x="180" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="60" />
+              <mxPoint x="180" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-28" value="8. 返回新令牌、刷新令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-27">
+          <mxGeometry x="-0.0032" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-29" value="第三方业务系统 A" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-30" value="认证中心" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-31" value="第三方业务系统 B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="710" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-29" target="3OCdjHM_GOLRnjaXkHwM-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="580" as="sourcePoint" />
+            <mxPoint x="310" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-33" value="&lt;div&gt;1. 系统B的ID、系统A的ID、&lt;/div&gt;&lt;div&gt;系统A的密钥&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-32">
+          <mxGeometry x="-0.1024" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-34" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-30" target="3OCdjHM_GOLRnjaXkHwM-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="640" as="sourcePoint" />
+            <mxPoint x="320" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-35" value="2. 返回令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-34">
+          <mxGeometry x="0.0905" relative="1" as="geometry">
+            <mxPoint x="7" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.11;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="103.20000000000005" y="594.68" as="sourcePoint" />
+            <mxPoint x="103" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-37" value="3. API带上令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-36">
+          <mxGeometry x="-0.0422" y="-2" relative="1" as="geometry">
+            <mxPoint x="-11" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-38" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.079;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.724;exitY=-0.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-31" target="3OCdjHM_GOLRnjaXkHwM-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="690" as="sourcePoint" />
+            <mxPoint x="430" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-39" value="&lt;div&gt;4. 验证令牌合法性&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-38">
+          <mxGeometry x="0.0776" relative="1" as="geometry">
+            <mxPoint x="-10" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.404;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.824;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-30" target="3OCdjHM_GOLRnjaXkHwM-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="700" as="sourcePoint" />
+            <mxPoint x="418" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-41" value="&lt;div&gt;5. 验证成功&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-40">
+          <mxGeometry x="-0.1799" y="-2" relative="1" as="geometry">
+            <mxPoint x="13" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="3OCdjHM_GOLRnjaXkHwM-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="710" as="sourcePoint" />
+            <mxPoint x="200" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-43" value="6. 返回业务数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-42">
+          <mxGeometry x="0.0675" relative="1" as="geometry">
+            <mxPoint y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-48" value="系统与系统认证" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-65" value="&lt;div&gt;APP&lt;/div&gt;&lt;div&gt;浏览器&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-66" value="认证中心" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-67" value="第三方业务系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1090" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-68" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-65" target="3OCdjHM_GOLRnjaXkHwM-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="960" as="sourcePoint" />
+            <mxPoint x="300" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-69" value="1. 用户工号，业务系统ID、密钥" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-68">
+          <mxGeometry x="-0.1024" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-70" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-66" target="3OCdjHM_GOLRnjaXkHwM-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="1020" as="sourcePoint" />
+            <mxPoint x="310" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-71" value="2. 返回令牌、刷新令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-70">
+          <mxGeometry x="0.0905" relative="1" as="geometry">
+            <mxPoint x="7" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-72" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.11;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="93.20000000000005" y="974.68" as="sourcePoint" />
+            <mxPoint x="93" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-73" value="3. API带上令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-72">
+          <mxGeometry x="-0.0422" y="-2" relative="1" as="geometry">
+            <mxPoint x="-11" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-74" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.079;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.724;exitY=-0.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-67" target="3OCdjHM_GOLRnjaXkHwM-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="1070" as="sourcePoint" />
+            <mxPoint x="420" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-75" value="&lt;div&gt;4. 验证令牌合法性&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-74">
+          <mxGeometry x="0.0776" relative="1" as="geometry">
+            <mxPoint x="-10" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-76" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.404;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.824;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-66" target="3OCdjHM_GOLRnjaXkHwM-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1080" as="sourcePoint" />
+            <mxPoint x="408" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-77" value="&lt;div&gt;5. 验证成功&lt;/div&gt;&lt;div&gt;返回用户信息&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-76">
+          <mxGeometry x="-0.1799" y="-2" relative="1" as="geometry">
+            <mxPoint x="13" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-78" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="3OCdjHM_GOLRnjaXkHwM-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="1090" as="sourcePoint" />
+            <mxPoint x="190" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-79" value="6. 返回业务数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-78">
+          <mxGeometry x="0.0675" relative="1" as="geometry">
+            <mxPoint y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-80" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.34;entryY=-0.052;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="3OCdjHM_GOLRnjaXkHwM-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="910" as="sourcePoint" />
+            <mxPoint x="400" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="830" />
+              <mxPoint x="400" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-81" value="7. 令牌过期，带上刷新令牌重新请求令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-80">
+          <mxGeometry x="-0.1006" y="-2" relative="1" as="geometry">
+            <mxPoint x="21" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-82" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.17;exitY=-0.052;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.833;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3OCdjHM_GOLRnjaXkHwM-66" target="3OCdjHM_GOLRnjaXkHwM-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="850" as="sourcePoint" />
+            <mxPoint x="180" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="850" />
+              <mxPoint x="180" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-83" value="8. 返回新令牌、刷新令牌" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3OCdjHM_GOLRnjaXkHwM-82">
+          <mxGeometry x="-0.0032" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3OCdjHM_GOLRnjaXkHwM-84" value="用户系统认证" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="860" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
